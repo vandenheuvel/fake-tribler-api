@@ -88,6 +88,12 @@ class TriblerData:
             }
         }}
 
+        self.display_information = {"focus_node": "y", "neighbor_level": 1,
+                                    "nodes": [{"public_key": "x", "total_up": 5, "total_down": 10},
+                                              {"public key": "y", "total_up": 10, "total_down": 5}],
+                                    "edges": [{"from": "x", "to": "y", "amount": 5},
+                                              {"from": "y", "to": "x", "amount": 10}]}
+
     # Generate channels from the random_channels file
     def generate_channels(self):
         num_channels = randint(100, 200)
